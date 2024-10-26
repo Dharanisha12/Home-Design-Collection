@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.heading{
+    font-size: 50px;
+    font-style: italic;
+    color: azure;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    color: aliceblue;
+}
+hr{
+    font-size: 20px;
+    color: aliceblue;
+}
+#video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgba(119, 119, 119, 0.6);
+}
+
+.container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30vh;
+}
+.centered-button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
