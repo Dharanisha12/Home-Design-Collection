@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0> ">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <title>Home Design collections | Login & Registration</title>
+    </head>
+    <body>      
+    <div class="wrapper">
+        <div class="video">
+            <video autoplay loop muted plays-lnline class="backvideo">
+                <source src="video/video6.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>D h a r a H u b</h1>
+                <p>Let's start exploring we help you to create the home of your dreams!!</p>
+            <div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#" class="link active">Home</a></li>
+                        <li><a href="designs.html" class="link">Designs</a></li>
+                        <li><a href="video/video.html" class="link">Videos</a></li>
+                        <li><a href="../About/index.html" class="link">About us</a></li>
+                        <li><a href="../Reviews/index.html" class="link">Reviews</a></li>
+                        <li><a href="../contact us form/index.html" class="link">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginbtn" onclick="login()">Sign In</button>
+                    <button class="btn white-btn" id="registerbtn" onclick="register()">Sign up</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenufunction()"></i>
+                </div>
+            </nav>   
+            <!--------------------form box------------------------->
+            <div class="form box">
+                <!-----------------login box---------------->
+                <form action="register.php" method="POST">
+                <div class="login-container" id="login">
+                 <div class="top">
+                     <spam>Don't have  an account? <a href="#" onclick="register()">Sign Up</a></spam>
+                     <header>Login</header>
+                 </div>
+             <div class="two-forms">
+             <div class="input-box">
+                     <div class="input-box">
+                         <input type="text" name="username or Email"class="input-field" placeholder="username or Email" required="">
+                         <i class="bx bx-user"></i>
+                         <div class="input-box">
+                             <input type="password" name="password"class="input-field" placeholder="password" required="">
+                             <i class="bx bx-lock-alt"></i>
+                             <div class="input-box">
+                                 <input type="submit" class="submit" value="Sign In">
+             </div>
+             <div class="two-col">
+             <div class="one">
+                 <input type="checkbox" id="login-check">
+                 <label for="login">Remember Me</label>
+             </div>
+             <div class="two">
+                 <label><a href="#">Forget password</a> 
+             </div>            
+             </div>
+             </div>
+            </div>    
+            </div>
+        </div>
+    </div> 
+                            <!-----------------registration box---------------->
+                            <form action="register.php" method="POST">
+                             <div class="register-container" id="register">
+                                 <div class="top">
+                                     <spam>Have an account? <a href="#" onclick="login()">Login</a></spam>
+                                     <header>Sign Up</header>
+                                 </div>
+                         <div class="two-forms">
+                             <div class="input-box">
+                                 <input type="text" name="Firstname" class="input-field" placeholder="Firstname" required="">
+                                 <i class="bx bx-user"></i>
+                                 <div class="input-box">
+                                     <input type="text" name="Lastname" class="input-field" placeholder="Lastname" required="">
+                                     <i class="bx bx-user"></i>
+                                     <div class="input-box">
+                                         <input type="text" name="Email" class="input-field" placeholder="Email" required="">
+                                         <i class="bx bx-envelope email-icon"></i>
+                                         <div class="input-box">
+                                             <input type="password" name="password" class="input-field" placeholder="password" required="">
+                                             <i class="bx bx-lock-alt"></i>
+                                             <div class="input-box">
+                                                 <input type="submit" class="submit" value="register">
+                         </div>
+                         <div class="two-col">
+                             <div class="one">
+                                 <input type="checkbox" id="register-check">
+                                 <label for="register-check">Remember Me</label>
+                             </div>
+                             <div class="two">
+                                 <label><a href="#">Terms & Conditions</a> 
+                             </div>            
+                         </div>
+                         </div>
+                     </div>
+                </div>
+                </div>
+            </div>
+        </div>
+             
+                     <script>
+                         function myMenufunction() {
+                             var i = document.getElementById("navMenu");
+             
+                             if(i.className === "nav-menu")
+                             {
+                                 i.className += "responsive";
+                             } else {
+                                 i.className = "nav-menu";
+                             }
+                         }
+                     </script>
+                     <script>
+                         var a =document.getElementById("loginbtn");
+                         var b =document.getElementById("registerbtn");
+                         var x =document.getElementById("login");
+                         var y =document.getElementById("register");
+             
+                         function login() {
+                             x.style.left = "4px";
+                             y.style.right = "-520px";
+                             a.className += "white-btn";
+                             b.className = "btn";
+                             x.style.opacity = 1;
+                             y.style.opacity= 0;
+                         }
+                         function register(){
+                             x.style.left = "-510px";
+                             y.style.right = "5px";
+                             a.className = "btn";
+                             b.className += "white-btn";
+                             x.style.opacity = 0;
+                             y.style.opacity= 1;
+             
+                         }
+                     </script>
+                     </nav>
+                     </form>
+                     </form>
+                </body>
+        
+             </html>   

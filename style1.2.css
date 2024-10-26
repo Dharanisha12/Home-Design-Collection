@@ -1,0 +1,31 @@
+body{
+    background: url('blur-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.a{
+    justify-content: center;
+}
+.{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+.card{
+    height: 300px;
+    margin: 30px;
+    box-shadow: 5px 5px 20px black;
+}
+img{
+    height: 300px;
+}

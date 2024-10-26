@@ -1,0 +1,45 @@
+body{
+    background: url('blur-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.villan ul{
+    display: flex;
+}
+.villan ul li{
+    list-style-type: none;
+}
+.villan ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 5px solid #fff;
+}
+.container{
+    text-align: center;
+}
+.container h1{
+    font-size: 150px;
+    color: black;
+    font-weight: 600;
+    transition: 0.8s;
+}
+.container h1:hover{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+.container a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
